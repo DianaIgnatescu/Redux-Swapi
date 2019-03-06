@@ -10,7 +10,6 @@ import rootReducer from "./reducers";
 
 const store = createStore(
   rootReducer,
-  /* applyMiddleware goes here */
   applyMiddleware(thunk, logger)
 );
 
