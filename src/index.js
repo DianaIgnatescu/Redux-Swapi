@@ -9,9 +9,9 @@ import logger from 'redux-logger';
 import rootReducer from "./reducers";
 
 const store = createStore(
-  rootReducer
+  rootReducer,
   /* applyMiddleware goes here */
-  applMiddleware(thunk, logger)
+  applyMiddleware(thunk, logger)
 );
 
 ReactDOM.render(
